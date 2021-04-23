@@ -1,0 +1,109 @@
+body {
+	background-color: #00BFFF;
+	font-family:"Times New Roman", Times, serif;
+}
+
+#main-navbar {
+	background-color: #B0C4DE;
+	overflow: hidden;
+}
+
+#navbar-container {
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+#main-navbar ul {
+	list-style-type:none;
+	margin: .5em;
+	padding: .5em;
+	position: relative;
+	left: 50%;
+	float: left;
+}
+
+#main-navbar li {
+	float: left;
+	position: relative;
+	right: 50%;
+	display: block;
+	color: blue;
+}
+
+#main-navbar a {
+	display: block;
+	padding: .625em 1.25em;
+	color: #fff;
+	text-decoration: none;
+}
+
+#main-navbar a:hover {
+	background-color: #000;
+}
+
+#onpage {
+	background-color: #B0C4DE;
+	
+}
+
+#footer {
+	text-align: center;
+	background-color:#F8F8FF;
+	margin-top: 2em;
+}
+
+#resume {
+	background-color: #000080;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 3em;
+	margin-right: 3em;
+	color: white;
+}
+
+#anime {
+	background-color: #000080;
+	margin-left: 5em;
+	margin-right: 5em;
+	color: white;
+	padding-left: 2em;
+	padding-right: 2em;
+	position: relative;
+	
+}
+
+#anime1 {
+	background-color: #000080;
+	margin-bottom: 3em;
+}
+
+#anime-lside {
+	background-color: #B0C4DE;
+	float: left;
+	padding-left: 50px;
+	padding-right: 50px;
+	width: 30em;
+	height: 100em;
+	text-align: center;
+	
+}
+
+#anime-rside {
+	background-color: #B0C4DE;
+	float: right;
+	height: 100em;
+	width: 30em;
+	text-align: center;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.heading {
+	text-align: center;
+	font-family: 'Cinzel', serif;
+}
+
+.title {
+	font-family: 'Reggae One', cursive;
+}
