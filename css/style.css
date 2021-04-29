@@ -107,3 +107,9 @@
 .title {
 	font-family: 'Reggae One', cursive;
 }
+
+#canvas {
+	width: 800px;
+	height: 700px;
+	margin: 8pc auto;
+}
