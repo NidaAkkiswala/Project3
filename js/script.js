@@ -3,31 +3,28 @@ $(document).ready(function(){
     });
 	
 function initMap() {
-	var el = document.getElementById('canvas');
-	var myLatLng = new google.maps.LatLng(42.052648121921564, -87.75195584135642);
-	var MapOptions = {
-		center: myLatLng,
-		zoom: 10
+	map = new google.maps.Map(document.getElementById('canvas'), {
+		center: {lat: 41.91049356042488, lng: -87.6772077410209},
+		zoom: 15;
 	};
 	
-	var myMap = new google.maps.Map(el, MapOptions);
-	
-	
-	var marker = new google.maps.Marker({
-		postion: myLatLng,
-		map: myMap,
+	const home = new google.maps.Marker({
+		postion: {lat: 42.0524416425546, lng: -87.75200353075955},
+		map,
 		icon: 'images/house.png'
+		animation: google.map.Animation.DROP,
+		title: "Home"
 	});
 	
-	var contentString = '<h1>My Home</h1><p>No place better than a good home</p>';
+	const homeinfo = '<h1>My Home</h1><p>No place better than a good home</p>';
 	
-	var infowindow = new google.maps.InfoWindow({
-		content: contentString
-	});
+	const houseWindow = new google.maps.InfoWindow({
+		content: homeinfo,
+	})
 	
-	google.maps.event.addListener(marker, 'mouseover', function() {
-		infowindow.open(myMap, marker);
-	});
+	home.addListener("click", () {
+		houseWindow.open(map, home);
+	})
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
